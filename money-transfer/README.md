@@ -15,7 +15,8 @@ function deposit(string schainID, address to) public payable {
   require(keccak256(abi.encodePacked(schainID)) != keccak256(abi.encodePacked("Mainnet")));
   require(tokenManagerAddresses[keccak256(abi.encodePacked(schainID))] != address(0));
   require(msg.value > 0);
-  Proxy(proxyAddress).postOutgoingMessage(schainID, tokenManagerAddresses[keccak256(abi.encodePacked(schainID))], msg.value, to);
+  Proxy(proxyAddress).postOutgoingMessage(schainID, 
+    tokenManagerAddresses[keccak256(abi.encodePacked(schainID))], msg.value, to);
 }
 ```
 
@@ -26,7 +27,8 @@ function deposit(string schainID, address to) public payable {
 ```
 function exitToMain(address to) public payable {
   require(msg.value > 0);
-  ProxyForSchain(proxyForSchainAddress).postOutgoingMessage("Mainnet", tokenManagerAddresses[keccak256(abi.encodePacked("Mainnet"))], msg.value, to);
+  ProxyForSchain(proxyForSchainAddress).postOutgoingMessage("Mainnet", 
+    tokenManagerAddresses[keccak256(abi.encodePacked("Mainnet"))], msg.value, to);
 }
 ```
 
