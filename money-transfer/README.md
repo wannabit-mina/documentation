@@ -31,7 +31,7 @@ function exitToMain(address to) public payable {
 
 
 **Learn More**
-> **[SKALE Website](https://skalelabs.com/)**
+> **[SKALE Website](https://skalelabs.com/)** <br/>
 > **[Developer Documentation](https://developers.skalelabs.com/)**
 
 ## Instructions
