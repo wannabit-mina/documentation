@@ -6,7 +6,7 @@ SKALE is an open-source, fully decentralized, layer 2 scaling network. Nodes in 
 
  
 **Learn More**
-> **[SKALE Website](https://skalelabs.com/)**
+> **[SKALE Website](https://skalelabs.com/)** <br/>
 > **[Developer Documentation](https://developers.skalelabs.com/)**
 
 # Deploying to SKALE
