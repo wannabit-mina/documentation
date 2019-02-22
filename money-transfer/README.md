@@ -1,7 +1,4 @@
-
-
-
-# Deploying to SKALE with Web3.js
+# Money Transfer Agent
 
 Handling money transfers on the mainnet can be accomplished by calling two methods:
 
