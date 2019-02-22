@@ -41,9 +41,9 @@ function exitToMain(address to) public payable {
 
 ####  Install node packages
 
-    ```
-    npm install
-    ```  
+```
+npm install
+```  
    
 #### Make a Deposit
 
@@ -52,9 +52,9 @@ Modify the `deposit.js` and add in your **account**, **private key**, and **SKAL
 
 Run the deposit script
 
-    ```
-    node deposit.js
-    ```
+```
+node deposit.js
+```
 
 #### Exit
 
@@ -64,6 +64,6 @@ Then add in your `schain_proxy.json` file into the `contracts` folder. The conte
 
 Run the deployment script
 
-    ```
-    node exit.js
-    ```
+```
+node exit.js
+```
