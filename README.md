@@ -20,7 +20,7 @@ Web3-js | [web3.js](deployment/web3-js) | [Truffle JS Deployment Documentation](
 
 # Money Transfer Agent
 
-Handling money transfers on the mainnet can be accomplished by calling two methods:
+Handling money transfers between the private SKALE testnet and your skale chain can be accomplished by calling two methods:
 
 METHOD | CODE EXAMPLE | DOCUMENTATION |
 --- | --- |:---  | 

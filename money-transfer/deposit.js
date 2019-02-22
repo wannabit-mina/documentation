@@ -3,7 +3,7 @@
  *
  *  @param {String} private key - Provide your private key.
  *  @param {String} account - Provide your account address.
- *  @param {String} SKALE Mainnet endpoint - provide your SKALE Mainnet endpoint
+ *  @param {String} Private SKALE testnet endpoint - provide the private SKALE testnet endpoint
  *  @param {String} SKALE Chain id - provide your SKALE Chain id
  */
 
@@ -13,13 +13,13 @@ const Tx = require('ethereumjs-tx');
 
 let privateKey = new Buffer('[YOUR_PRIVATE_KEY]', 'hex')
 let account = "[YOUR_ACCOUNT_ADDRESS]";
-let mainnetEndpoint = "[YOUR_SKALE_MAINNET_ENDPOINT]";
+let privateSkaleTestnetEndpoint = "[PRIVATE_SKALE_TESTNET_ENDPOINT]";
 let schainID = "[YOUR_SKALE_CHAIN_ID]";
 
 const depositBoxAddress = mainnetJson.deposit_box_address;
 const abi = mainnetJson.deposit_box_abi;
 
-const web3 = new Web3(new Web3.providers.HttpProvider(mainnetEndpoint));
+const web3 = new Web3(new Web3.providers.HttpProvider(privateSkaleTestnetEndpoint));
 
 let contract = new web3.eth.Contract(abi, depositBoxAddress);
 

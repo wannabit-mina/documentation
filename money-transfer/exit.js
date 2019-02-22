@@ -14,7 +14,7 @@ const Tx = require('ethereumjs-tx');
 
 let privateKey = new Buffer('[YOUR_PRIVATE_KEY]', 'hex')
 let account = "[YOUR_ACCOUNT_ADDRESS]";
-let schainEndpoint = "[YOUR_SKALE_MAINNET_ENDPOINT]";
+let schainEndpoint = "[YOUR_SKALE_CHAIN_ENDPOINT]";
 
 const tokenManagerAddress = schainJson.token_manager_address;
 const abi = schainJson.token_manager_abi;

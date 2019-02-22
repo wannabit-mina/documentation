@@ -1,11 +1,11 @@
 # Money Transfer Agent
 
-Handling money transfers on the mainnet can be accomplished by calling two methods:
+Handling money transfers between the private SKALE testnet and your skale chain can be accomplished by calling two methods:
 
 
 #### Deposit method
 
- This method is called from the SKALE Mainnet to "freeze" funds and move money into a safe Deposit Box.
+ This method is called from the private SKALE testnet to "freeze" funds and move money into a safe Deposit Box.
 
 ```
 function deposit(string schainID, address to) public payable {
@@ -19,7 +19,7 @@ function deposit(string schainID, address to) public payable {
 
 #### Exit to Mainnet
 
- This method is called from the SKALE Chain to "release" funds and exit back to the end user.
+ This method is called from the SKALE Chain to "release" funds and exit back to the end user on the private SKALE testnet.
 
 ```
 function exitToMain(address to) public payable {
@@ -44,7 +44,7 @@ npm install
    
 #### Make a Deposit
 
-Modify the `deposit.js` and add in your **account**, **private key**, **SKALE Mainnet**, and **SKALE Chain** information
+Modify the `deposit.js` and add in your **account**, **private key**, **private SKALE testnet**, and **SKALE Chain** information
 
 
 Run the deposit script
@@ -67,7 +67,7 @@ node exit.js
 
 #### Check Balances
 
-Modify the `balances.js` and add in your **account**, **private key**, **SKALE Mainnet**, and **SKALE Chain** information
+Modify the `balances.js` and add in your **account**, **private key**, **private SKALE testnet**, and **SKALE Chain** information
 
 
 Run the deposit script
