@@ -44,7 +44,7 @@ npm install
    
 #### Make a Deposit
 
-Modify the `deposit.js` and add in your **account**, **private key**, and **SKALE Chain** information
+Modify the `deposit.js` and add in your **account**, **private key**, **SKALE Mainnet**, and **SKALE Chain** information
 
 
 Run the deposit script
@@ -63,4 +63,15 @@ Run the deployment script
 
 ```
 node exit.js
+```
+
+#### Check Balances
+
+Modify the `balances.js` and add in your **account**, **private key**, **SKALE Mainnet**, and **SKALE Chain** information
+
+
+Run the deposit script
+
+```
+node balances.js
 ```
