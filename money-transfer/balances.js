@@ -7,7 +7,7 @@
  */
 
 const Web3 = require('web3');
-const mainnetJson = require("./contracts/mainnet_proxy.json");
+const mainnetJson = require("./contracts/mainnet_proxy.json"); //this is the aws ABIs provided to you
 
 let account = "[YOUR_ACCOUNT_ADDRESS]";
 let privateSkaleTestnetEndpoint = "[PRIVATE_SKALE_TESTNET_ENDPOINT]";
