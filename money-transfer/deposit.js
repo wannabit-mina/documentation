@@ -8,7 +8,7 @@
  */
 
 const Web3 = require('web3');
-const mainnetJson = require("./contracts/private_skale_testnet_proxy.json"); //this is the aws ABIs provided to you
+const privateTestnetJson = require("./contracts/private_skale_testnet_proxy.json"); //this is the aws ABIs provided to you
 const Tx = require('ethereumjs-tx');
 
 let privateKey = new Buffer('[YOUR_PRIVATE_KEY]', 'hex')
@@ -16,8 +16,8 @@ let account = "[YOUR_ACCOUNT_ADDRESS]";
 let privateSkaleTestnetEndpoint = "[PRIVATE_SKALE_TESTNET_ENDPOINT]";
 let schainID = "[YOUR_SKALE_CHAIN_ID]";
 
-const depositBoxAddress = mainnetJson.deposit_box_address;
-const abi = mainnetJson.deposit_box_abi;
+const depositBoxAddress = privateTestnetJson.deposit_box_address;
+const abi = privateTestnetJson.deposit_box_abi;
 
 const web3 = new Web3(new Web3.providers.HttpProvider(privateSkaleTestnetEndpoint));
 
