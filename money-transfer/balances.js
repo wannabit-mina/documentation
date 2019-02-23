@@ -1,6 +1,6 @@
 /*
- * This nodeJS script will check balances of the deposit Box, and funds the specific
- * account has access to on the SKALE chain.
+ * This nodeJS script will check balances of the Deposit Box, and funds the specific
+ * account/user has access to on the SKALE chain.
  *
  *  @param {String} account - Provide your account address.
  *  @param {String} Private SKALE testnet endpoint - provide the private SKALE testnet endpoint
@@ -12,7 +12,7 @@ const privateTestnetJson = require("./contracts/private_skale_testnet_proxy.json
 
 let account = "[YOUR_ACCOUNT_ADDRESS]";
 let privateSkaleTestnetEndpoint = "[PRIVATE_SKALE_TESTNET_ENDPOINT]";
-let schainEndpoint = "[YOUR_SKALE_MAINNET_ENDPOINT]";
+let schainEndpoint = "[YOUR_SKALE_CHAIN_ENDPOINT]";
 
 const depositBoxAddress = privateTestnetJson.deposit_box_address;
 
@@ -26,6 +26,6 @@ web3SkaleChain.eth.getBalance(account)
 });
 
 web3PrivateTestnet.eth.getBalance(depositBoxAddress)
-.then((balance) => { console.log("Balance in Mainnet Deposit Box: " + 
+.then((balance) => { console.log("Balance in private SKALE testnet Deposit Box: " + 
     web3PrivateTestnet.utils.fromWei(balance, 'ether'))
 });
