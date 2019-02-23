@@ -8,7 +8,7 @@
  */
 
 const Web3 = require('web3');
-const schainJson = require("./contracts/schain_proxy.json");
+const schainJson = require("./contracts/schain_proxy.json"); //this is the schain ABIs provided to you
 
 const Tx = require('ethereumjs-tx');
 
