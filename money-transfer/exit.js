@@ -1,5 +1,5 @@
 /*
- * This nodeJS script will deposit funds into your SKALE Deposit Box.
+ * This nodeJS script will allow you to remove funds from the Deposit Box..
  *
  *  @param {String} private key - Provide your private key.
  *  @param {String} account - Provide your account address.

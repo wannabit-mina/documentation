@@ -1,5 +1,6 @@
 /*
- * This nodeJS script will deposit funds into your SKALE Deposit Box.
+ * This nodeJS script will check balances of the deposit Box, and funds the specific
+ * account has access to on the SKALE chain.
  *
  *  @param {String} account - Provide your account address.
  *  @param {String} Private SKALE testnet endpoint - provide the private SKALE testnet endpoint
