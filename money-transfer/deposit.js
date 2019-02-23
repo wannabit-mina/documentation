@@ -8,7 +8,7 @@
  */
 
 const Web3 = require('web3');
-const mainnetJson = require("./contracts/mainnet_proxy.json");
+const mainnetJson = require("./contracts/mainnet_proxy.json"); //this is the aws ABIs provided to you
 const Tx = require('ethereumjs-tx');
 
 let privateKey = new Buffer('[YOUR_PRIVATE_KEY]', 'hex')
