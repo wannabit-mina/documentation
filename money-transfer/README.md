@@ -17,7 +17,7 @@ function deposit(string schainID, address to) public payable {
 }
 ```
 
-#### Exit to Mainnet
+#### Exit to private SKALE testnet
 
  This method is called from the SKALE Chain to "release" funds and exit back to the end user on the private SKALE testnet.
 
