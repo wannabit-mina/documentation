@@ -22,7 +22,7 @@ const web3SkaleChain = new Web3(new Web3.providers.HttpProvider(schainEndpoint))
 web3SkaleChain.eth.getBalance(account)
 .then((balance) => { 
   console.log("SKALE Chain account: " + account)
-  console.log("Balance: " + web3SkaleChain.utils.fromWei(balance, 'ether'))
+  console.log("Balance on SKALE Chain: " + web3SkaleChain.utils.fromWei(balance, 'ether'))
 });
 
 web3PrivateTestnet.eth.getBalance(depositBoxAddress)
