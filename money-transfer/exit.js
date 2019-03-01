@@ -48,7 +48,7 @@ const serializedTx = tx.serialize();
     on('receipt', receipt => {
       console.log(receipt);
       web3.eth.getBalance(account)
-      .then((balance) => { console.log("Balance in Deposit Box: " + 
+      .then((balance) => { console.log("Balance on SKALE Chain: " + 
           web3.utils.fromWei(balance, 'ether'))
       });
    }).
