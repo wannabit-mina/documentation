@@ -47,10 +47,6 @@ const serializedTx = tx.serialize();
   web3.eth.sendSignedTransaction('0x' + serializedTx.toString('hex')).
     on('receipt', receipt => {
       console.log(receipt);
-      web3.eth.getBalance(account)
-      .then((balance) => { console.log("Balance on SKALE Chain: " + 
-          web3.utils.fromWei(balance, 'ether'))
-      });
    }).
     catch(console.error);
 });

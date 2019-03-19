@@ -50,10 +50,6 @@ web3.eth.getTransactionCount(account).then(nonce => {
   web3.eth.sendSignedTransaction('0x' + serializedTx.toString('hex')).
     on('receipt', receipt => {
       console.log(receipt);
-      web3.eth.getBalance(depositBoxAddress)
-      .then((balance) => { console.log("Balance in Deposit Box: " + 
-          web3.utils.fromWei(balance, 'ether'))
-      });
    }).
     catch(console.error);
 });

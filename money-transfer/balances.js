@@ -25,6 +25,11 @@ web3SkaleChain.eth.getBalance(account)
   console.log("Balance on SKALE Chain: " + web3SkaleChain.utils.fromWei(balance, 'ether'))
 });
 
+web3PrivateTestnet.eth.getBalance(account)
+.then((balance) => { console.log("Account balance on private SKALE: " + 
+    web3PrivateTestnet.utils.fromWei(balance, 'ether'))
+});
+
 web3PrivateTestnet.eth.getBalance(depositBoxAddress)
 .then((balance) => { console.log("Balance in private SKALE testnet Deposit Box: " + 
     web3PrivateTestnet.utils.fromWei(balance, 'ether'))
