@@ -1,5 +1,6 @@
 
 
+
 # SKALE Documentation Code Examples
 
 SKALE is an open-source, fully decentralized, layer 2 scaling network. Nodes in the SKALE Network are placed into SKALE chains (S-chains) in a random, cryptographically secure manner. The nodes work together to run a fast, asynchronous consensus with fast finality. S-chains are capable of performing state updates by messaging each other and the main Ethereum chain using BLS threshold signatures. The result is a decentralized, cost-effective, secure, and easy to use layer 2 scaling environment.
@@ -20,9 +21,9 @@ Web3-js | [web3.js](deployment/web3-js) | [Truffle JS Deployment Documentation](
 
 # Money Transfer Agent
 
-Handling money transfers between the private SKALE testnet and your skale chain can be accomplished by calling two methods:
+Handling token and message transfers between the private SKALE devnet and your SKALE chain can be accomplished by a combination of the smart contract methods available on your SKALE Chain.
 
-METHOD | CODE EXAMPLE | DOCUMENTATION |
+Type | CODE EXAMPLE | 
 --- | --- |:---  | 
-Deposit | [deposit.js](money-transfer/deposit.js) | [Deposit Documentation](money-transfer) |
-Exit to Mainnet | [exit.js](money-transfer/exit.js) | [Exit Documentation](money-transfer) 
+ETH | [ETH Token Management](money-transfer) |
+ERC20 | [ERC20 Token Management](money-transfer) | 

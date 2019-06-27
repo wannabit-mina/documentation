@@ -8,14 +8,15 @@
  *  @param {String} contractFileName - Complete filename of contract (i.e. MySmartContract.sol)
  */
 
+require('dotenv').config();
 const Web3 = require('web3'); // version 1.0.0-beta.35
 const solc = require('solc'); // version 0.5.4
 const path = require('path');
 const fs = require('fs');
 
-let privateKey = "[YOUR_PRIVATE_KEY]";
-let account = "[YOUR_ACCOUNT_ADDRESS]";
-let schainEndpoint = "[YOUR_SKALE_CHAIN_ENDPOINT]";
+let privateKey = process.env.PRIVATE_KEY;
+let account = process.env.ACCOUNT;
+let schainEndpoint = process.env.SKALE_CHAIN;
 
 let contractName = "HelloSKALE"; //replace with your contract name
 let contractFileName = "HelloSKALE.sol"; //replace with the filename of the contract
@@ -47,8 +48,7 @@ let solcOutput = JSON.parse(solc.compile(JSON.stringify(contracts)));
 let contractCompiled = solcOutput.contracts[contractFileName][contractName];
 
 //Connect Web3 to your SKALE Chain
-const web3 = new Web3(new Web3.providers.HttpProvider(schainEndpoint));
-
+const web3 = new Web3(schainEndpoint);
 
 //create transaction 
 var tx = {
@@ -58,11 +58,7 @@ var tx = {
   gas: 80000000
 };
 
-//sign transaction to deploy contract
-web3.eth.accounts.signTransaction(tx, privateKey).then(signed => {
-  web3.eth.sendSignedTransaction(signed.rawTransaction).
-    on('receipt', receipt => {
-     console.log(receipt)
-   }).
-    catch(console.error);
+web3.eth.getBalance(account)
+.then((balance) => { 
+  console.log("SKALE Chain account: " + balance)
 });
