@@ -24,6 +24,6 @@ Web3-js | [web3.js](deployment/web3-js) | [Truffle JS Deployment Documentation](
 Handling token and message transfers between the private SKALE devnet and your SKALE chain can be accomplished by a combination of the smart contract methods available on your SKALE Chain.
 
 Type | CODE EXAMPLE | 
---- | --- |:---  | 
+--- |:---  | 
 ETH | [ETH Token Management](money-transfer) |
 ERC20 | [ERC20 Token Management](money-transfer) | 
