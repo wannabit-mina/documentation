@@ -3,7 +3,7 @@
 
 Handling token and message transfers between the private SKALE devnet and your SKALE chain can be accomplished by a combination of the smart contract methods found below.
 
-> The Interchain Messaging Agent will be fully open sources in July 2019. Once open sources the smart contracts will be migrated to Ethereum testnets such as Rinkeby.
+> The Interchain Messaging Agent will be fully open sourced in July 2019. Once open sourced, the smart contracts will be migrated to Ethereum testnets such as Rinkeby.
 
 
 ## Table of Contents
@@ -26,7 +26,7 @@ Handling token and message transfers between the private SKALE devnet and your S
     
 + Install node packages
 
-```
+```bash
 npm install
 ```
 
@@ -68,7 +68,7 @@ function deposit(string memory schainID, address to) public payable {
 
 To test this out using the code samples, run:
 
-```
+```bash
 node eth/deposit.js
 ```
 
@@ -90,7 +90,7 @@ function exitToMain(address to, uint amount) public {
 
 To test this out using the code samples, run:
 
-```
+```bash
 node eth/exit.js
 ```
 
@@ -114,7 +114,7 @@ function getMyEth() public {
 ##### Run the getMyEth Script
 
 To test this out using the code samples, run:
-```
+```bash
 node eth/getMyEth.js
 ```
 
@@ -127,7 +127,7 @@ Run the deposit script
 
 Run the following, to check the balances of your accounts on the mainnet and the SKALE Chain.  
 
-```
+```bash
 node erc20/balances.js
 ```
 <a name="erc20"></a>
@@ -223,7 +223,7 @@ function exitToMainERC20(address contractHere, address to, uint amount) public {
 
 To test this out using the code samples, run:
 
-```
+```bash
 node erc20/exit.js
 ```
 
@@ -232,6 +232,6 @@ node erc20/exit.js
 
 Run the following, to check the balances of your accounts on the mainnet and the SKALE Chain.  
 
-```
+```bash
 node erc20/balances.js
 ```
