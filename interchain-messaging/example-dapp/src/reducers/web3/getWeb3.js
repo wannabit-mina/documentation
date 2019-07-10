@@ -1,7 +1,7 @@
 import store from '../../store'
 import Web3 from 'web3'
-import rinkebyJson from "../../../contracts/mainnet/rinkeby_proxy.json"
-import schainJson from "../../../contracts/skale-chain/schain_proxy.json"
+import rinkebyJson from "../../contracts/mainnet/rinkeby_proxy.json"
+import schainJson from "../../contracts/skale-chain/schain_proxy.json"
 
 export const WEB3_INITIALIZED = 'WEB3_INITIALIZED'
 function web3Initialized(results) {
