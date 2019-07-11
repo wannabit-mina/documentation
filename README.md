@@ -25,5 +25,5 @@ Handling token and message transfers between the private SKALE devnet and your S
 
 Type | CODE EXAMPLE | 
 --- |:---  | 
-ETH | [ETH Token Management](money-transfer) |
-ERC20 | [ERC20 Token Management](money-transfer) | 
+ETH | [ETH Token Management](interchain-messaging) |
+ERC20 | [ERC20 Token Management](interchain-messaging) | 
