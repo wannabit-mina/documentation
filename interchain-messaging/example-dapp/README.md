@@ -1,10 +1,10 @@
 
 
-# SKALE Money Transfer Demo
+# SKALE Interchain Messaging Demo
 
 # Introduction
 
-Demo dApp designed as a proof of concept for using SKALE's money transfer agent (MTA) feature.
+Demo dApp designed as a proof of concept for using SKALE's interchain messaging agent (IMA) feature.
 
 ### Run App Locally
 
