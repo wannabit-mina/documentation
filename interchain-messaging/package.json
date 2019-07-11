@@ -1,5 +1,5 @@
 {
-  "name": "SKALE_MONEY_TRANSFER",
+  "name": "SKALE_INTERCHAIN-MESSAGING",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

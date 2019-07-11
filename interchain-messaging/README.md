@@ -27,7 +27,7 @@ Handling token and message transfers between the private SKALE devnet and your S
 
 | TOKEN TYPE  | DOCUMENTATION |
  --- |:---  | 
-ETH | [documentation](/example-dapp)|
+ETH | [documentation](/interchain-messaging)|
 
 #
 <a name="configure"></a>

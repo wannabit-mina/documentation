@@ -2,7 +2,7 @@ const Web3 = require('web3');
 const Tx = require('ethereumjs-tx');
 const fs = require('fs');
 const privateTestnetJson = require("../contracts/private_skale_testnet_proxy.json");
-const erc20PrivateTestnetJson = require("../contracts/ERC20_private_skale_testnet.json");
+const erc20SchainJson = require("../contracts/ERC20_schain_proxy.json");
 const schainJson = require("../contracts/schain_proxy.json");
 require("dotenv").config();
 
